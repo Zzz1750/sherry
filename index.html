@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherrrrryyy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        html{
+            overflow: hidden;
+        }
+        body{
+            background-color: #fff0f5;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .common_button{
+            transform: translate(-50%,-50%);
+            padding: 10px 25px;
+            border-radius: 5px;
+            background-color: #f0e9fa;
+            border: 1px solid #d3bcf6;
+            font-size: 18px;
+            font-family: "Karla", serif;
+        }
+        .common_content{
+            width: 80%;
+            height: 50%;
+            transition: all 1s ease;
+        }
+        #content1{
+            position: absolute;
+            top: 40%;
+            left: 150vw;
+            transform: translate(-50%,-50%);
+        }
+
+        #content2{
+            position: absolute;
+            top: 40%;
+            left: 150vw;
+            transform: translate(-50%,-50%);
+        }
+        #content3{
+            position: absolute;
+            top: 40%;
+            left: 150vw;
+            transform: translate(-50%,-50%);
+        }
+        #content4{
+           display: none;
+           opacity: 0;
+           transition: opacity 1s ease;
+
+        }
+        #content5{
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease;
+ 
+         }
+
+        #title{            
+            font-family: "Darumadrop One", serif;
+            font-weight: 200;
+            font-size: 35px;
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+        }
+        #first_image{
+            position: absolute;
+            width: 50%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #to_content2{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+           
+        }
+        #heart_shape{
+            width: 30%;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            transform: translate(-50%,-50%) rotate(30deg);
+        }
+        #heart2{
+            position: absolute;
+            top: 35%;
+            left: 92%;
+            transform: translate(-50%,-50%);
+            width: 15%;
+        }
+
+
+
+        /*content 2*/
+        #content2_title{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #to_content3{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        /*content3*/
+        #content3_title{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            line-height: 150%;
+        }
+        #to_content4{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+        }
+
+        /*content4*/
+        #cake{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 30%;
+            transform: translate(-50%,-50%);
+        }
+        #content4_title{
+            width: 80%;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            font-size: 20px;
+            transform: translate(-50%, -50%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        #dont{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%,-50%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        #yes{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        #movableButton {
+            transition: left 0.3s ease, top 0.3s ease;
+            padding: 10px 25px;
+            border-radius: 5px;
+            background-color: #f0e9fa;
+            border: 1px solid #d3bcf6;
+            font-size: 18px;
+            font-family: "Karla", serif;
+            position: absolute;
+           
+        }
+
+        /*content5*/
+        #end_img{
+            position: absolute;
+            top: 30%;
+            left: 55%;
+            transform: translate(-50%,-50%);
+            width: 60%;
+        }
+        #end_line{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content1" class="common_content">
+        <h1 id="title">Sherrrrrryyyyyy</h1>
+        <button id="to_content2" class="common_button">- ahhh -</button>
+        <img src="./2_heart.png" id="heart2" alt="">
+    </div>
+    <div id="content2" class="common_content">
+        <h1 id="content2_title">ummmmmm..</h1>
+        <button id="to_content3" class="common_button">uhh ?</button>
+    </div>
+    <div id="content3" class="common_content">
+        <img src="./heart-shape.png" id="heart_shape" alt="">
+        <h1 id="content3_title" class="title">ummmmmm<br>Cherrrrrryyyyyy</h1>
+        <button id="to_content4" class="common_button">entha ?</button>
+    </div>
+    <div id="content4" class="common_content">
+        <h1 id="content4_title">Namuk CheeseCake Kazhikan <br>pokaaa sherrryyyy 🍰</h1>
+        <img src="./cake.png" id="cake" alt="">
+        <p id="dont">( dont click no )</p>
+        <button id="yes" class="common_button">- YES! -</button>
+        <button id="movableButton">NO :(</button>
+    </div>
+    <div id="content5">
+        <img src="./endd.png" id="end_img" alt="">
+        <p id="end_line">Va Pokaaaa!</p>
+    </div>
+    <script>
+
+        //begining
+        setTimeout(()=>{
+            slide_in('content1');
+
+        },1000)
+        
+        const content4 = document.getElementById('content4');
+        const content5 = document.getElementById('content5');
+
+       
+        document.getElementById('to_content2').addEventListener('click',()=>{
+            slide_out('content1');
+            slide_in('content2');
+        })
+
+        document.getElementById('to_content3').addEventListener('click',()=>{
+            slide_out('content2');
+            slide_in('content3');
+        })
+
+        document.getElementById('to_content4').addEventListener('click',()=>{
+            slide_out('content3');
+            slide_in('content4');
+        })
+
+        document.getElementById('to_content4').addEventListener('click',()=>{
+            slide_out('content3');
+            content4.style.display='block';
+            setTimeout(()=>{
+                content4.style.opacity='1';
+            },200);
+        })
+
+        document.getElementById('yes').addEventListener('click',()=>{
+            content4.style.opacity='0';
+            setTimeout(()=>{
+                content4.style.display='none';
+                document.getElementById('content1').style.display='none';
+                document.getElementById('content2').style.display='none';
+                document.getElementById('content3').style.display='none';
+
+                content5.style.display='block';
+                setTimeout(()=>{
+                    content5.style.opacity='1';
+                },200);
+            },1005);
+        })
+
+        function slide_in(content){
+            var slide_in_content = document.getElementById(content);
+            slide_in_content.style.left='50vw';
+        }
+
+
+        function slide_out(content){
+            var slide_out_content = document.getElementById(content);
+            slide_out_content.style.left='-50vw';
+
+        }
+    </script>
+    <script>
+        const button = document.getElementById("movableButton");
+        
+        function setInitialPosition() {
+            const yesButton = document.getElementById("yes");
+            const noButton = document.getElementById("movableButton");
+        
+            const yesRect = yesButton.getBoundingClientRect();
+        
+            noButton.style.left = `${yesRect.left + 135}px`;
+            noButton.style.top = `${yesRect.bottom + 400}px`; 
+        }
+        
+        window.onload = setInitialPosition;
+        
+        
+
+        function moveButton() {
+
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
+
+            const newX = Math.random() * maxX;
+            const newY = Math.random() * maxY;
+            button.style.marginTop='0'
+            button.style.left = `${newX}px`;
+            button.style.top = `${newY}px`;
+        }
+
+
+        button.addEventListener("click", moveButton);
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Button</title>
+    <style>
+        #movableButton {
+            transition: left 0.3s ease, top 0.3s ease;
+            padding: 10px 25px;
+            border-radius: 5px;
+            background-color: #f0e9fa;
+            border: 1px solid #d3bcf6;
+            font-size: 18px;
+            font-family: "Karla", serif;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="movableButton">Click Me</button>
+
+    <script>
+        const button = document.getElementById("movableButton");
+
+        function setInitialPosition() {
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
+
+            const initialX = maxX / 2;
+            const initialY = maxY / 2;
+
+            button.style.left = `${initialX}px`;
+            button.style.top = `${initialY}px`;
+        }
+
+        function moveButton() {
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
+
+            const newX = Math.random() * maxX;
+            const newY = Math.random() * maxY;
+
+            button.style.left = `${newX}px`;
+            button.style.top = `${newY}px`;
+        }
+
+        window.onload = setInitialPosition;
+
+        button.addEventListener("click", moveButton);
+    </script>
+</body>
+</html>
